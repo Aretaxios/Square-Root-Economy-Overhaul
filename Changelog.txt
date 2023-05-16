@@ -1,0 +1,77 @@
+### Square Root Economy Overhaul ###
+
+---Changelog---
+v. 1.0
+
+-Investment Points-
+
+* National base investment points equal the square root of GDP
+* Mission difficulty modifiers are still based on the cubed root of GDP, and so function exactly like they do in the base game
+* Control point maintenance cost is equal to the country's base investment points divided by the number of control points. This actually produces per-control point maintenance costs very similar to those of the base game, so there is no need to adjust anything related to control point caps
+* Adjusted AI weights for scoring countries and control points based on the new square root formula
+
+-Economy Priority-
+
+* Per-capita GDP gain from the economy priority scales inversely with the square root of population
+* That number is then modified by the number of resource and core economic regions in the country, diminishing for every additional region past the first
+* GDP effect is then modified by the current ratio of PCGDP to education, with GDP gain increasing if the ratio is below 5000, and decreasing if above 5000
+* Inequality gain from the economy priority scales inversely with the square root of population
+* If inequality is below 3.5, produces more inequality. If above 3.5, produces less. This should lead to fewer instances of inequality being at extreme values.
+* Greenhouse emissions from economy scale inversely with the square root of population. After some tinkering, I arrived at a value that closely approximates the current rate of real-world temperature increases
+
+-Welfare Priority-
+
+* Inequality reduction and emissions reduction from welfare priority scale inversely with the square root of population
+* If inequality is below 3.5, reduces less inequality. If above 3.5, reduces more. This should lead to fewer instances of inequality being at extreme values.
+
+-Knowledge Priority-
+
+* The effects of knowledge on education, cohesion, and government scale inversely with the square root of population
+* Education gain from knowledge becomes less effective as education increases. This should make it easier for low-education countries to catch up, and harder to make a country where literally everyone has a PhD
+
+-Unity Priority-
+
+* The effects of unity on cohesion, government, and faction popularity scale inversely with the square root of population
+* Unity is more effective at lower levels of education and government
+* Cohesion gain from Unity is less effective as unrest increases. This makes it necessary to use military to reduce unrest before fixing the underlying cause with unity.
+
+-Military Priority-
+
+* The effects of military on miltech and unrest scale inversely with the square root of population
+* Miltech increases more slowly at high levels of miltech. This makes it easier for low-tech countries to catch up, while harder to field space marine armies by 2030.
+
+-Spoils Priority-
+
+* The effects of spoils on government, inequality, and greenhouse emissions scale inversely with the square root of population
+* If inequality is below 3.5, produces more inequality. If above 3.5, produces less. This should lead to fewer instances of inequality being at extreme values.
+* The base money income from spoils is equal to per-capita GDP / 2000. So a country with 50k PCGDP produces a base of 25 cash per spoils
+* Each resource region in a country adds 10 cash to that base.
+* Spoils becomes more effective at low government values, with income being multiplied by up to 2X at 0 government score.
+
+-Funding Priority-
+
+* Completing the funding priority increases annual funding by 10 + the country's government score, up to a maximum of 20 annual funding at 10 government. This makes funding a viable alternative to spoils, especially in democracies.
+
+-Direct Investment-
+
+* The money cost of direct investment has been changed to 300 money per IP for all priorities
+* The influence cost of direct investment has been changed to 3 influence per control point
+* Like before, these costs are increased by corruption and not owning all control points in a country
+
+-Cohesion System-
+
+* Overhauled the cohesion system so that the base resting cohesion is 5 instead of 20.25. I feel that resting cohesion in the base game tends to swing between extreme values, and these changes make cohesion more stable and intuitive.
+* Everything that affects resting cohesion (inequality, government, rivals, wars, population, country size) has been rebalanced to account for this
+* Inequality above 3 reduces cohesion, while inequality below 3 increases it. The effect is equal to 3 - inequality
+* Per capita GDP below 10,000 reduces cohesion, scaling up to -5 at 0 GDP per capita
+* Population effect on cohesion uses a base 10 logarithm, giving +2 cohesion at 1 million population, +1 at 10 million, 0 at 100 million, -1 at 1 billion, and -2 at 10 billion
+* Population distribution effect on cohesion works the same, but the effect has been toned down to account for the reduction in base cohesion.
+* Effect of rivals on cohesion has been toned down and affected by diminishing returns, with 1 near-peer rivalry giving +1 cohesion, and 5 or more rivalries giving +2 cohesion
+* Likewise, wars now give 1-2 cohesion depending on number of wars.
+* Ideology effect on cohesion works the same, but the impact is reduced by half to account for lower base cohesion
+* Government score works similar to before, but the effects have been lowered to account for lower base cohesion, and the cohesion increase from authoritarian governments is reduced when unrest is high. This is meant to simulate how authoritarian regimes can be very stable at peace, but have problems reining things in once a civil war gets going.
+
+-Priority Costs-
+
+* The IP costs to complete most non-scaling priorities has been doubled, to account for the significant increase in IPs available to most countries
+* Countries' starting IPs in space program, nuclear program, army, and navy have been updated to reflect this.

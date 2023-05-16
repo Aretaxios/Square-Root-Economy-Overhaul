@@ -1,0 +1,12 @@
+{
+  "Id": "Square Root Economy Overhaul",
+  "DisplayName": "Square Root Economy Overhaul",
+  "title": "Square Root Economy Overhaul",
+  "Author": "Aretaxios",
+  "description": "",
+  "Version": "1.0",
+  "ManagerVersion": "0.25.0",
+  "GameVersion": "0.3.80",
+  "AssemblyName": "Square Root Economy Overhaul.dll",
+  "EntryMethod": "Square_Root_Economy_Overhaul.Main.Load"
+}

@@ -1,0 +1,11 @@
+### Square Root Economy Overhaul ###
+
+Summary
+
+The Square Root Economy Overhaul is a Terra Invicta mod that overhauls the Earth economy to be more fun and balanced while still preserving the feel of the base game. Partially based on the Verdiss Economy Mod, this mod makes two fundamental changes to how national economies work in Terra Invicta:
+
+1. A country's base investment points are now equal to the square root of GDP, instead of the cubed root of GDP that is used in vanilla. This means that countries generally have more investment points to work with, and this is especially true for larger countries.
+
+2. The scaling priorities of Economy, Welfare, Knowledge, Unity, Military, and (partially) Spoils now have their effects scale against the square root of population, rather than being static as in vanilla. This fixes an issue with the base game where investing in scaling priorities is a complete waste of IPs for small countries, but can produce absurd results such as >$1 million per-capita GDP for mega-nations. With this mod, investing 10% of IPs into Economy or Welfare will produce proportionally similar results regardless of whether it's a country with 1 million people or 10 billion.
+
+As you might imagine, these are big changes and this mod includes a number of other balance adjustments to account for them - you can find those in the change log. However, you shouldn't need to understand every change in order to use this mod, because the sum total of these changes produces an experience that is far more balanced and intuitive than in the base game. My hope is that this mod makes what are simple, one-sided decisions in the base game, such as whether to merge every country into as big a mega-nation as possible, or whether to invest in Spoils or Funding for income, into more nuanced choices that depend more on the specifics involved.
