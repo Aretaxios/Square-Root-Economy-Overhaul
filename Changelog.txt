@@ -1,6 +1,32 @@
 ### Square Root Economy Overhaul ###
 
 ---Changelog---
+v. 1.1
+
+-Economy Priority-
+
+* Increased the preferred PCGDP/education ratio from 5000 to 6250
+* This should lead to slightly higher economic growth overall
+
+-Military Priority-
+
+* Increased the base miltech gain from Military from 0.015 to 0.02 due to countries advancing more slowly than expected
+
+-Climate Change-
+
+* Increased the effect of spoils on methane and nitrous oxide emissions
+* Decreased the effect of welfare on eliminating methane and nitrous oxide emissions
+* These changes make the progression of climate change more realistic
+
+-Cohesion System-
+
+* Completely overhauled the ideology effect on cohesion to be more balanced and intuitive
+* Now, adds a penalty if the popularity of the mean control point owner is below 50%, while adding cohesion if popularity is above 50%.
+* If below 50%, the penalty is multiplied by the ideological difference between the mean control point owner and the mean public ideology if the two are different.
+* If this sounds confusing, don't worry about it. Just know that increasing your faction's popularity raises resting cohesion in the countries you control.
+* Updated the population distribution effect on resting cohesion to use the new calculation in the validation branch.
+* The effect has been toned down from the base game to be in line with this mod's cohesion system.
+
 v. 1.0
 
 -Investment Points-
