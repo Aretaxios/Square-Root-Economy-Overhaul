@@ -1,6 +1,23 @@
 ### Square Root Economy Overhaul ###
 
 ---Changelog---
+v. 1.2
+
+-Funding Priority-
+
+* Annual funding now has a soft cap of 10 annual funding per 1 billion GDP (I'm assuming 1 "money" = 1 million dollars, so the cap is 1% of GDP)
+* Once funding exceeds this cap, additional funding from the funding priority will be divided by the ratio of current funding to the funding cap
+* This means funding will be half as effective at 2% of GDP, 1/3 as effective at 3% of GDP, and so on
+
+-Climate Change-
+
+* Continued efforts to narrow down climate change outcomes to a realistic band
+* This is difficult, as GHG emissions are only affected by the economy, welfare, and spoils priorities, and which priorities the AI selects heavily depends on RNG and ideology
+* For example, Initiative-controlled China will lead to much higher emissions than Academy-controlled China
+* Slightly increased CH4 increase from economy priority
+* Slightly decreased N2O increase from economy priority
+* Decreased CH4 reduction from welfare priority
+
 v. 1.1
 
 -Economy Priority-
